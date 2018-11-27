@@ -7,6 +7,13 @@
     width: 100%;
 }
 
+.blockchin {
+    display: inline-flex;
+    flex-flow: row wrap;
+
+
+}
+
 #blockchain {
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +77,11 @@
     margin-left: 105px;
     border-radius: 5px;
 }
+.pinky-v{
 
+border-left: 6px solid green;
+height: 500px;
+}
 
 .inside-info {
     margin-left: 30px;

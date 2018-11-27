@@ -12,12 +12,16 @@
 
 <body>
     <nav></nav>
-    <div id="blockchain">
+    <div id="blockchain" class="blockchin">
         {% for block in blockchain %}
         
         <div class="block">
             <div class="title-parts">
-                <div class="joyn-title">JOYN</div>
+                <img src = "logo.png" style="
+    border-radius: 15px;
+    width: 90px;
+                display:inline;
+                text-align: center;"/>
                 <div class="pinky">&nbsp;</div>
             </div>
             <div class="inside-info">
@@ -27,7 +31,7 @@
                     <div class="data-text">Initial Block</div>
                     {% else %}
                     <div>
-                        <div class="data-text">JOYN Data: {{block.data.contractId}}</div>
+                        <div class="data-text">JOYN'd Event: {{block.data.contractId}}</div>
                     </div>
                     {% endif %}
                 </div>
@@ -48,10 +52,6 @@
                 </div>
             </div>
         </div>
-
-        <p class="arrow-wrapper">
-            <span class="glyphicon glyphicon-arrow-down"></span>
-        </p>
         {% endfor %}
     </div>
 
